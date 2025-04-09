@@ -61,7 +61,7 @@ export const ChaptersForm = ({
       toggleCreating();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Payment available only through cash");
     }
   }
 
@@ -75,7 +75,7 @@ export const ChaptersForm = ({
       toast.success("Chapters reordered");
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Payment available only through cash");
     } finally {
       setIsUpdating(false);
     }

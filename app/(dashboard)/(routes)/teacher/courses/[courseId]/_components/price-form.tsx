@@ -57,7 +57,7 @@ export const PriceForm = ({
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Payment available only through cash");
     }
   }
 

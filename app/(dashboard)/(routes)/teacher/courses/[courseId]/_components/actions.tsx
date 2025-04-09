@@ -40,7 +40,7 @@ export const Actions = ({
 
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Payment available only through cash");
     } finally {
       setIsLoading(false);
     }
@@ -56,7 +56,7 @@ export const Actions = ({
       router.refresh();
       router.push(`/teacher/courses`);
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Payment available only through cash");
     } finally {
       setIsLoading(false);
     }
