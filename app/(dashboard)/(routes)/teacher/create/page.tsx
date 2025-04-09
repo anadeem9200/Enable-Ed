@@ -43,7 +43,7 @@ const CreatePage = () => {
       router.push(`/teacher/courses/${response.data.id}`);
       toast.success("Course created");
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     }
   }
 

@@ -26,7 +26,7 @@ export const CourseEnrollButton = ({
 
       window.location.assign(response.data.url);
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     } finally {
       setIsLoading(false);
     }

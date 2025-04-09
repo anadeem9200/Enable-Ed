@@ -39,7 +39,7 @@ export const AttachmentForm = ({
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     }
   };
 
@@ -50,7 +50,7 @@ export const AttachmentForm = ({
       toast.success("Attachment deleted");
       router.refresh();
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     } finally {
       setDeletingId(null);
     }

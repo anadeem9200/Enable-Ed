@@ -39,7 +39,7 @@ export const ChapterActions = ({
 
       router.refresh();
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     } finally {
       setIsLoading(false);
     }
@@ -55,7 +55,7 @@ export const ChapterActions = ({
       router.refresh();
       router.push(`/teacher/courses/${courseId}`);
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     } finally {
       setIsLoading(false);
     }

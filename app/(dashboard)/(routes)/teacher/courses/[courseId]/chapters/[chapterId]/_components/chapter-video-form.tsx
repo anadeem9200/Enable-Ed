@@ -41,7 +41,7 @@ export const ChapterVideoForm = ({
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Payment available only through cash");
+      toast.error("Rediect to payment page : undefined");
     }
   }
 
